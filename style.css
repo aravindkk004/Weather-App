@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),url(./images/img3.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0px;
+}
+
+.error{
+    color: yellow;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    display: none;
+}
+
+.errActive{
+    display: block;
+}
+
+.wrapper input{
+    height: 50px;
+    width: 350px;
+    padding:  10px 20px;
+    font-size: 1.3rem;
+    border-radius: 30px;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper button{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.active{
+    display: inline-flex;
+}
+
+.wrapper img{
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.temp{
+    font-size: 3.2rem;
+    color: antiquewhite;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cityName{
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.extra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.humidity,
+.wind{
+    margin: 10px;
+    flex: 0 0 50%;
+    display: flex;
+    height: 120px;
+    align-items: center;
+}
+
+.humidity img,
+.wind img{
+    height: 60px;
+    margin: 0px 10px;
+}
+
+.details h5{
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.details p{
+    font-size: 1.2rem;
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+}
